@@ -25,7 +25,7 @@ jobs:
       - name: Markdown to PDF and HTML
         uses: BaileyJM02/markdown-to-pdf@v1.2.0
         with:
-          input_path: doc/**
+          input_path: doc/DI
           images_dir: img
           output_dir: pdfs
       - uses: actions/upload-artifact@v3
