@@ -24,3 +24,14 @@
 * C - La complejidad de entrar en el sector
 * H - Hostilidad: puede haber dos pubs al lado, pero no dos supermercados
 * I - Integración:
+
+## Análisis e informes
+
+### DAFO
+
+- Debilidades: no me conocen
+- Amenazas
+- Fortalezas: conocimientos, ganas de emprender...
+- Oportunidades
+
+Consonantes (debilidades y fortalezas) representan cosas internas. Amenazas y oportunidades, externas.
