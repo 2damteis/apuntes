@@ -29,9 +29,16 @@
 
 ### DAFO
 
-- Debilidades: no me conocen
+- Debilidades
 - Amenazas
-- Fortalezas: conocimientos, ganas de emprender...
+- Fortalezas
 - Oportunidades
 
 Consonantes (debilidades y fortalezas) representan cosas internas. Amenazas y oportunidades, externas.
+
+### CAME
+
+- Corregir las debilidades
+- Afrontar las amenazas
+- Mantener fortalezas
+- Explorar nuevas oportunidades
