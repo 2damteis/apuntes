@@ -1,4 +1,6 @@
-# PyQt6  
+# PyQt
+
+Libraría de Python para a creación de GUI empregando o framework Qt. Este documento refírese a PyQt6.
 
 ## Creación programática de interfaces e fundamentos de Qt  
 
@@ -65,7 +67,7 @@ app.exec()
 O núcleo dunha aplicación Qt é a clase QApplication, que contén o loop de eventos da aplicación. Este xestiona as interaccións do usuario ca GUI.  
 Cada interacción (pulsar teclas do teclado, clicks ou movementos do rato...) xera un evento que se introduce na cola de eventos. O loop de eventos consulta periodicamente esta cola e comproba se hai eventos en espera de execución. Se atopa un evento en espera, pasa o control ao manexador de evento correspondente, o cal executa as súas operacións e devolve o control ao loop de eventos.  
 
-![event loop](../img/DI/PyQT/event-loop.png)
+![event loop](../img/di/PyQt/event-loop.png)
 
 ### Dimensionar ventás e widgets  
 
@@ -681,9 +683,9 @@ class Color(QWidget):
 
 #### **QVBoxLayout**  
 
-Este layout coloca os widgets uns enriba de outros linealmente. Ao engadir un widget, este engádese pola parte inferior.  
+Este layout coloca os widgets uns enriba de outros linealmente. Ao engadir un widget, este engádese pola parte inferior.
 
-![QVBoxLayout](../img/DI/PyQT/vboxlayout.png)
+![QVBoxLayout](../img/di/PyQt/vboxlayout.png)
 
 Neste exemplo, vese como o layout sitúa os elementos:  
 
@@ -732,7 +734,7 @@ app.exec()
 
 Igual ao anterior, pero organiza os ítems horizontalmente, engadindo os novos pola dereita.  
 
-![QHBoxLayout](../img/DI/PyQT/hboxlayout.png)
+![QHBoxLayout](../img/di/PyQt/hboxlayout.png)
 
 Para comprobar o funcionamento, pode substituírse o *QVBoxLayout* do exemplo anterior por un *QHBoxLayout*.  
 
@@ -740,17 +742,17 @@ Para comprobar o funcionamento, pode substituírse o *QVBoxLayout* do exemplo an
 
 Aínda que é posible empregar combinacións de *QVBoxLayout* e *QHBoxLayout* para crear distribucións de elementos máis complexas, se o que se desexa é que elementos de distintos tamaños queden aliñados, deberíase empregar un *QGridLayout*. Este layout organiza os contidos nunha cuadrícula, especificando para cada widget unha fila e unha columna para colocalos.  
 
-![grid layout](../img/DI/PyQT/gridlayout1.png)
+![grid layout](../img/di/PyQt/gridlayout1.png)
 
 Non é necesario encher consecutivamente todas as posicións da cuadrícula, o que permite máis liberdade ao crear distribucións.  
 
-![grid layout 2](../img/DI/PyQT/gridlayout2.png)
+![grid layout 2](../img/di/PyQt/gridlayout2.png)
 
 #### **QStackedLayout**  
 
 Este layout apila os widgets uns fronte a outros, sendo utilizable só o widget visible no nivel superior. É útil para imitar unha interface con lapelas. Existe un widget, *QStackedWidget*, que é un contedor que funciona da mesma forma que este layout, sendo util cando se desexa engadir unha pila de widgets directamente a unha *QMainWindow* con *.setCentralWidget()*.  
 
-![stacked layout](../img/DI/PyQT/qstackedlayout1.png)  
+![stacked layout](../img/di/PyQt/qstackedlayout1.png)  
 
 Pódese controlar o widget visible en cada momento empregando os métodos *.setCurrentIndex(i: int)* e *setCurrentWidget(widget: QWidget)*.  
 
@@ -1159,7 +1161,7 @@ Funciona do mesmo xeito que ao crear os elementos con código. A ferramenta *pyu
 A forma recomendada para incluír widgets dentro de layouts en QtDesigner é arrastrar os widgets á ventá de aplicación, seleccionalos e despois aplicarlles o layout adecuado.  
 Poden aplicarse layouts a través da toolbar de QtDesigner para evitar o uso de menús.  
 
-![layout toolbar](../img/DI/PyQT/layout-toolbar.png)
+![layout toolbar](../img/di/PyQt/layout-toolbar.png)
 
 De esquerda a dereita representan:  
 
@@ -1189,4 +1191,3 @@ mucho TODO
 **Sinais de QMainWindow:**  
 
 - windowTitleChanged  
-
